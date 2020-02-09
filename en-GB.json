@@ -1,0 +1,649 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "someone to speak with",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "EmotionIntent",
+          "slots": [
+            {
+              "name": "FEELING",
+              "type": "feeling"
+            },
+            {
+              "name": "VERB",
+              "type": "verb"
+            },
+            {
+              "name": "ADVERB",
+              "type": "adverb"
+            }
+          ],
+          "samples": [
+            "I am feeling {FEELING}",
+            "I am {FEELING}",
+            "I feel  {FEELING}",
+            "I have been  {FEELING}",
+            "I have been feeling  {FEELING}",
+            "I have been feeling {ADVERB}  {FEELING}",
+            "I have been {ADVERB}  {FEELING}",
+            "I feel {ADVERB}  {FEELING}",
+            "I am {ADVERB}  {FEELING}",
+            "I am feeling {ADVERB}  {FEELING} "
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "OpinionIntent",
+          "slots": [],
+          "samples": [
+            "what is the best option",
+            "what is the answer",
+            "what should i do",
+            "what do you think",
+            "what can I do"
+          ]
+        },
+        {
+          "name": "SituationIntent",
+          "slots": [
+            {
+              "name": "SITUATION",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            " {SITUATION}",
+            "It happned that {SITUATION}",
+            "Happened that {SITUATION}"
+          ]
+        },
+        {
+          "name": "PolarIntent",
+          "slots": [
+            {
+              "name": "AFFIRMATION",
+              "type": "affirmation"
+            },
+            {
+              "name": "NEGATION",
+              "type": "negation"
+            }
+          ],
+          "samples": [
+            "{NEGATION}",
+            "{AFFIRMATION}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "glad",
+                "synonyms": [
+                  "happy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "impressed",
+                "synonyms": [
+                  "dazzled",
+                  "fascenated",
+                  "affected",
+                  "admiring"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "amused",
+                "synonyms": [
+                  "entertained",
+                  "happy",
+                  "humourous",
+                  "enthralled"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "anxious",
+                "synonyms": [
+                  "concerned",
+                  "distressed",
+                  "nervous",
+                  "fearful"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "in awe",
+                "synonyms": [
+                  "amazed",
+                  "impressed",
+                  "bewildered",
+                  "astounded"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bored",
+                "synonyms": [
+                  "uninterested",
+                  "uninvolved",
+                  "indifferent",
+                  "incurious"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "calm",
+                "synonyms": [
+                  "soothed",
+                  "tranquil",
+                  "serene",
+                  "placid"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "confused",
+                "synonyms": [
+                  "disoriented",
+                  "puzzled",
+                  "perplexed",
+                  "bewildered"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "unsatisfied",
+                "synonyms": [
+                  "discontented",
+                  "unfiffilled",
+                  "unappeased",
+                  "unsatiated"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "disgusted",
+                "synonyms": [
+                  "appalled",
+                  "outraged",
+                  "unhappy",
+                  "queasy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "entranced",
+                "synonyms": [
+                  "mesmerised",
+                  "enthralled",
+                  "enchanted",
+                  "bewitched"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "jealous",
+                "synonyms": [
+                  "envious",
+                  "begruging",
+                  "suspicious",
+                  "possessive"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "excited",
+                "synonyms": [
+                  "thrilled",
+                  "enthusiastic",
+                  "thrilled",
+                  "eager"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "scared",
+                "synonyms": [
+                  "fearful",
+                  "afraid",
+                  "panicked",
+                  "nervous"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "horrified",
+                "synonyms": [
+                  "shocked",
+                  "repelled",
+                  "disgusted",
+                  "repulsed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "interested",
+                "synonyms": [
+                  "absorbed",
+                  "attentive",
+                  "keen",
+                  "engrossed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "happy",
+                "synonyms": [
+                  "glad",
+                  "joyful",
+                  "cheerful",
+                  "elated",
+                  "upbear",
+                  "joyous"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "nostalgic",
+                "synonyms": [
+                  "wistful",
+                  "sentimental",
+                  "regret",
+                  "homesick"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "romantic",
+                "synonyms": [
+                  "charming",
+                  "tender",
+                  "amorous",
+                  "dreamy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sad",
+                "synonyms": [
+                  "down",
+                  "blue",
+                  "upset",
+                  "dismal",
+                  "melancholy",
+                  "pessimistic"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "satisfied",
+                "synonyms": [
+                  "contented",
+                  "fufilled",
+                  "appeased",
+                  "satiated"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "feeling sexual desire",
+                "synonyms": [
+                  "horny",
+                  "concupiscent",
+                  "lascivious",
+                  "lustful"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sympathetic",
+                "synonyms": [
+                  "affectionate",
+                  "caring",
+                  "compassionate",
+                  "supportive"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "triumpant",
+                "synonyms": [
+                  "celebratory",
+                  "elated",
+                  "exultant",
+                  "glorious"
+                ]
+              }
+            }
+          ],
+          "name": "feeling"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "feeling"
+              }
+            },
+            {
+              "name": {
+                "value": "been"
+              }
+            },
+            {
+              "name": {
+                "value": "was"
+              }
+            },
+            {
+              "name": {
+                "value": "have been"
+              }
+            },
+            {
+              "name": {
+                "value": "i still feel"
+              }
+            },
+            {
+              "name": {
+                "value": "i still"
+              }
+            },
+            {
+              "name": {
+                "value": "i feel it"
+              }
+            },
+            {
+              "name": {
+                "value": "i believe"
+              }
+            },
+            {
+              "name": {
+                "value": "feel this"
+              }
+            },
+            {
+              "name": {
+                "value": "think"
+              }
+            },
+            {
+              "name": {
+                "value": "think I am"
+              }
+            },
+            {
+              "name": {
+                "value": "feel"
+              }
+            },
+            {
+              "name": {
+                "value": "am"
+              }
+            },
+            {
+              "name": {
+                "value": "find myself"
+              }
+            }
+          ],
+          "name": "verb"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "pretty"
+              }
+            },
+            {
+              "name": {
+                "value": "extremly"
+              }
+            },
+            {
+              "name": {
+                "value": "highly"
+              }
+            },
+            {
+              "name": {
+                "value": "surely"
+              }
+            },
+            {
+              "name": {
+                "value": "honestly"
+              }
+            },
+            {
+              "name": {
+                "value": "definitely"
+              }
+            },
+            {
+              "name": {
+                "value": "certainly"
+              }
+            },
+            {
+              "name": {
+                "value": "frankly"
+              }
+            },
+            {
+              "name": {
+                "value": "ridiculously"
+              }
+            },
+            {
+              "name": {
+                "value": "obviously"
+              }
+            },
+            {
+              "name": {
+                "value": "insanely"
+              }
+            },
+            {
+              "name": {
+                "value": "amazingly"
+              }
+            },
+            {
+              "name": {
+                "value": "really really"
+              }
+            },
+            {
+              "name": {
+                "value": "incredibly"
+              }
+            },
+            {
+              "name": {
+                "value": "very"
+              }
+            },
+            {
+              "name": {
+                "value": "really"
+              }
+            },
+            {
+              "name": {
+                "value": "quite"
+              }
+            }
+          ],
+          "name": "adverb"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "i suppose"
+              }
+            },
+            {
+              "name": {
+                "value": "obviously"
+              }
+            },
+            {
+              "name": {
+                "value": "yes it is"
+              }
+            },
+            {
+              "name": {
+                "value": "that is"
+              }
+            },
+            {
+              "name": {
+                "value": "pretty much"
+              }
+            },
+            {
+              "name": {
+                "value": "yeah"
+              }
+            },
+            {
+              "name": {
+                "value": "yes"
+              }
+            }
+          ],
+          "name": "affirmation"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "actually not"
+              }
+            },
+            {
+              "name": {
+                "value": "really not"
+              }
+            },
+            {
+              "name": {
+                "value": "not really"
+              }
+            },
+            {
+              "name": {
+                "value": "isn\u0027t"
+              }
+            },
+            {
+              "name": {
+                "value": "wouldn\u0027t"
+              }
+            },
+            {
+              "name": {
+                "value": "i can\u0027t see"
+              }
+            },
+            {
+              "name": {
+                "value": "don\u0027t"
+              }
+            },
+            {
+              "name": {
+                "value": "not"
+              }
+            },
+            {
+              "name": {
+                "value": "i don\u0027t"
+              }
+            },
+            {
+              "name": {
+                "value": "there\u0027s no way"
+              }
+            },
+            {
+              "name": {
+                "value": "there\u0027s nothing"
+              }
+            },
+            {
+              "name": {
+                "value": "nothing"
+              }
+            },
+            {
+              "name": {
+                "value": "no way"
+              }
+            },
+            {
+              "name": {
+                "value": "no"
+              }
+            }
+          ],
+          "name": "negation"
+        }
+      ]
+    }
+  },
+  "version": "41"
+}
